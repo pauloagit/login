@@ -3,18 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 8082",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 8082",
     "lint": "next lint"
   },
   "dependencies": {
+    "@module-federation/nextjs-mf": "^7.0.8",
+    "next": "13.5.4",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "13.5.4"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "13.5.4"
+    "eslint-config-next": "13.5.4",
+    "webpack": "^5.88.2"
   }
 }
